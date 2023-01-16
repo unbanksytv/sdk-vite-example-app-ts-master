@@ -21,9 +21,9 @@ function App() {
   const handleJoin = async () => {
     try {
       await huddleClient.join("dev", {
-        address: "0x15900c698ee356E6976e5645394F027F0704c8Eb",
+        address: "0x77CAacb4d8D84C68FB8e33baDADFde8a26AA6d25",
         wallet: "",
-        ens: "axit.eth",
+        ens: "",
       });
 
       console.log("joined");
@@ -44,7 +44,7 @@ function App() {
               <img src={reactLogo} className="logo react" alt="React logo" />
             </a>
           </div>
-          <h1>Vite + React</h1>
+          <h1>LTL Brainstorm VC</h1>
 
           <h2 className={`text-${!roomState.joined ? "red" : "green"}`}>
             Room Joined:&nbsp;{roomState.joined.toString()}
